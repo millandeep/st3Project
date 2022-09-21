@@ -1,0 +1,168 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  display: flex;
+}
+
+body ::before {
+  /* background-image: url(img/back.jpg); */
+  /* background-image: url(image/back4.jpg); */
+  background-color: rgb(28, 28, 28);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: center;
+  z-index: -1;
+  filter: blur(3px);
+}
+
+.title {
+  background: white;
+  display: flex;
+  position: absolute;
+  height: 60px;
+  border: 3px solid black;
+  align-items: center;
+  justify-content: center;
+  width: 1530px;
+}
+
+.title h2 {
+  font-size: 30px;
+}
+
+.title input {
+  align-items: center;
+  /* justify-content: center; */
+  margin-left: 42px;
+  height: 23px;
+  /* padding: 6px; */
+  margin-top: 1px;
+  /* border-radius: 20px; */
+}
+
+.container {
+  /* border: 3px solid green; */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 250px;
+  flex-wrap: wrap;
+  /* justify-content: center;
+    align-items: center; */
+}
+
+.planet {
+  /* border: 3px solid black; */
+  margin: 15px;
+  /* transition: transform 0.2s; */
+}
+
+.planet img {
+  /* height: 150px; */
+  /* width: 150px; */
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+}
+
+.planet p {
+  color: white;
+  text-align: center;
+  font-size: 1.01rem;
+}
+
+/*sun*/
+.planetS img {
+  width: 250px;
+  /* height: 300px; */
+  border-radius: 100%;
+}
+
+#planet0 {
+  margin-top: 430px;
+  margin-left: -100px;
+}
+
+/* .container :hover {
+  transform: scale(1.2);
+} */
+/* .input {
+  border: 2px solid rgb(255, 0, 0);
+
+  margin-top: 100px;
+} */
+
+#btn {
+  /* color: rgb(255, 152, 255); */
+  /* background-color: rgb(139, 204, 248); */
+  padding: 5px;
+  margin-left: 25px;
+  border-radius: 10px;
+}
+
+.alignment {
+  display: flex;
+}
+
+/*planet id*/
+
+#planet1 {
+  position: absolute;
+  left: 0;
+  top: 63px;
+}
+
+#planet2 {
+  position: absolute;
+  left: 215px;
+  top: 104px;
+}
+
+#planet3 {
+  position: absolute;
+  left: 418px;
+  top: 146px;
+}
+
+#planet4 {
+  position: absolute;
+  left: 605px;
+  top: 208px;
+}
+
+#planet5 {
+  position: absolute;
+  left: 796px;
+  top: 269px;
+}
+
+#planet6 {
+  position: absolute;
+  left: 997px;
+  top: 347px;
+}
+
+#planet7 {
+  position: absolute;
+  left: 1183px;
+  top: 400px;
+}
+
+#planet8 {
+  position: absolute;
+
+  right: -8px;
+  top: 550px;
+}

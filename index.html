@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet weight</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="title">
+        <h2>Weight on different planet</h2>
+        <input id="inputWeight" type="text" placeholder="Enter weight">
+        <button id="btn" onclick="Weight()">Submit</button>
+    </div>
+
+    <div class="Input">
+    </div>
+
+
+    <div class="planetS" id="planet0">
+        <img src="image/sun.png" alt="sun" />
+        <!-- <p id="merc">Your weight on Mercury is:</p> -->
+    </div>
+
+
+
+    <div class="container">
+
+
+        <div class="planet" id="planet1">
+            <img src="image/mercury.jpeg" alt="mercury" />
+            <p id="merc">Your weight on Mercury is:</p>
+        </div>
+
+        <div class="planet" id="planet2">
+            <img src="image/venus.jpeg" alt="venus" />
+            <p id="ven">Your weight on Venus is:</p>
+        </div>
+
+        <div class="planet" id="planet3">
+            <img src="image/earth.jpeg" alt="earth" />
+            <p id="ear">Your weight on Earth is:</p>
+        </div>
+
+        <div class="planet" id="planet4">
+            <img src="image/mars.jpeg" alt="mars" />
+            <p id="mar">Your weight on Mars is:</p>
+        </div>
+
+
+
+        <div class="planet" id="planet5">
+            <img src="image/jupiter.jpeg" alt="jupiter" />
+            <p id="jup">Your weight on Jupiter is:</p>
+        </div>
+
+        <div class="planet" id="planet6">
+            <img src="image/saturn.png" alt="saturn" />
+            <p id="sat">Your weight on Saturn is:</p>
+        </div>
+
+        <div class="planet" id="planet7">
+            <img src="image/uranus.jpeg" alt="uranus" />
+            <p id="ura">Your weight on Uranus is:</p>
+        </div>
+
+        <div class="planet" id="planet8">
+            <img src="image/neptune.jpeg" alt="neptune" />
+            <p id="nep">Your weight on Neptune is:</p>
+        </div>
+
+    </div>
+
+    <script>
+        function Weight() {
+            let weight = Number(document.getElementById("inputWeight").value);
+            let mercury = Math.trunc(weight * 0.37);
+            let venus = Math.trunc(weight * 0.91);
+            let mars = Math.trunc(weight * 0.38);
+            let jupiter = Math.trunc(weight * 2.34);
+            let saturn = Math.trunc(weight * 1.06);
+            let uranus = Math.trunc(weight * 0.92);
+            let neptune = Math.trunc(weight * 1.12);
+
+            document.getElementById("merc").innerHTML = "Your weight on Mercury is: " + mercury;
+            document.getElementById("ven").innerHTML = "Your weight on Venus is: " + venus;
+            document.getElementById("ear").innerHTML = "Your weight on Earth is: " + weight;
+            document.getElementById("mar").innerHTML = "Your weight on Mars is: " + mars;
+            document.getElementById("jup").innerHTML = "Your weight on Jupiter is: " + jupiter;
+            document.getElementById("sat").innerHTML = "Your weight on Saturn is " + saturn;
+            document.getElementById("ura").innerHTML = "Your weight on Uranus is " + uranus;
+            document.getElementById("nep").innerHTML = "Your weight on Neptune is " + neptune;
+        }
+    </script>
+
+</body>
+
+</html>
